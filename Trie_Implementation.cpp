@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 class TrieNode {
 public:
     char data; //data is stored in each node as char 
@@ -73,3 +77,13 @@ public:
  * bool param_2 = obj->search(word);
  * bool param_3 = obj->startsWith(prefix);
  */
+
+int main() {
+	Trie* obj = new Trie();
+	obj->insert("apple");	
+	cout<<obj->search("apple")<<endl;
+	cout<<obj->search("orange")<<endl;
+	cout<<obj->startsWith("app")<<endl;
+
+	return 0;
+}
